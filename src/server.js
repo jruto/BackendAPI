@@ -24,7 +24,7 @@ const server = express();
 
 const { PORT } = process.env;
 
-const whiteList = ["http://localhost:3000"];
+const whiteList = ["http://localhost:3000" || "https://strivazon3.herokuapp.com"];
 const corsOptions = {
   origin: (origin, callback) => {
     if (whiteList.some((allowedUrl) => allowedUrl === origin)) {
